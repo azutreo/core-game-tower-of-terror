@@ -82,7 +82,16 @@ local function playerJoined(player)
     player:SetResource("Wins", playerData.wins or 0)
 
     Task.Wait(1)
-    Events.BroadcastToPlayer(player, "UpdateStages", order)
+	Events.BroadcastToPlayer(player, "UpdateStages", order)
+
+	-- if(player.name ~= "NicholasForeman") then return end
+	-- local task = Task.Spawn(function()
+	-- 	local pd = Storage.GetPlayerData(player)
+	-- 	Events.BroadcastToPlayer(player, "Draw", pd.time)
+	-- 	Task.Wait(2.885)
+	-- end)
+	-- task.repeatCount = -1
+	-- task.repeatInterval = -1
 end
 
 local function someoneWon(trigger, player)
@@ -101,7 +110,13 @@ local function someoneWon(trigger, player)
     player:SetResource("Wins", playerData.wins or 0)
 
     local difference = script:GetCustomProperty("DefaultTime") - script:GetCustomProperty("Timer")
-    local playerTime = playerData.time or -1
+	local playerTime = playerData.time or -1
+	if(playerTime == 0) then
+		playerTime = -1
+	end
+	if(difference == 0) then
+		difference = script:GetCustomProperty("DefaultTime")
+	end
 
     local beatHighScore = false
     if(playerTime == -1) then
@@ -112,10 +127,10 @@ local function someoneWon(trigger, player)
         beatHighScore = true
     end
 
+    Storage.SetPlayerData(player, playerData)
     if(beatHighScore) then
         player:SetResource("HighScore", math.floor(playerData.time * 60 * 60 * 100))
     end
-    Storage.SetPlayerData(player, playerData)
 
     local newMinutes = math.floor(difference / 60)
     local newSeconds = math.floor(difference - (60 * newMinutes))
