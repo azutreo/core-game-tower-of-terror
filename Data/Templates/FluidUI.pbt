@@ -504,6 +504,6 @@
   Marketplace {
     Description: "FluidUI, created by Nicholas Foreman (nforeman)\r\nThumbnail created by John Shoff (FearTheDev)\r\n\r\nFluidUI is a responsive User Interface Framework that allows you to design your interface dynamically without having to worry about the screen resolution of the users playing your games. With many powerful features such as screen-size scaling, grids/lists, and aspect ratios, you will have nearly full control over the presentation of your game.\r\n\r\nGetting the framework to work itself is simple. You only need one instance of this script inside of of a ClientContext. Any additional copies of this script will conflict with each other and you will not get the intended goal.\r\n\r\nWithin the FluidUI.lua script is some very important documentation on how to utilize the system."
   }
-  SerializationVersion: 62
+  SerializationVersion: 65
   DirectlyPublished: true
 }

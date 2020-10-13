@@ -7,6 +7,6 @@
   Marketplace {
     Description: "Includes two very useful functions relating to the world:\r\n\r\nfunction Module:WaitForChild(parent, childName, timeout)\r\nfunction Module:GetDescendants(parent)"
   }
-  SerializationVersion: 62
+  SerializationVersion: 65
   DirectlyPublished: true
 }

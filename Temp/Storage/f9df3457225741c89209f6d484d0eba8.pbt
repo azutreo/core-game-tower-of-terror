@@ -1,5 +1,13 @@
 ﻿Entries {
   Key {
+    StringVar: "currentTrail"
+  }
+  SimpleValue {
+    IntVar: 10
+  }
+}
+Entries {
+  Key {
     StringVar: "wins"
   }
   SimpleValue {
@@ -12,14 +20,6 @@ Entries {
   }
   SimpleValue {
     FloatVar: 21.8977661
-  }
-}
-Entries {
-  Key {
-    StringVar: "currentTrail"
-  }
-  SimpleValue {
-    IntVar: 10
   }
 }
 Entries {

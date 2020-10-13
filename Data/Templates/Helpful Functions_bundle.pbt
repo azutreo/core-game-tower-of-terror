@@ -40,5 +40,5 @@
     Version: "1.2.0"
     Description: "Includes two very useful functions relating to the world:\r\n\r\nfunciton Module:FindPlayerByName(playerName)\r\nfunction Module:WaitForChild(parent, childName, timeout)\r\nfunction Module:GetDescendants(parent)"
   }
-  SerializationVersion: 62
+  SerializationVersion: 65
 }
