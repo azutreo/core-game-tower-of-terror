@@ -1,5 +1,21 @@
 ﻿Entries {
   Key {
+    StringVar: "coins"
+  }
+  SimpleValue {
+    IntVar: 98440
+  }
+}
+Entries {
+  Key {
+    StringVar: "time"
+  }
+  SimpleValue {
+    FloatVar: 21.8977661
+  }
+}
+Entries {
+  Key {
     StringVar: "currentTrail"
   }
   SimpleValue {
@@ -12,14 +28,6 @@ Entries {
   }
   SimpleValue {
     IntVar: 3
-  }
-}
-Entries {
-  Key {
-    StringVar: "time"
-  }
-  SimpleValue {
-    FloatVar: 21.8977661
   }
 }
 Entries {
@@ -109,13 +117,5 @@ Entries {
         }
       }
     }
-  }
-}
-Entries {
-  Key {
-    StringVar: "coins"
-  }
-  SimpleValue {
-    IntVar: 98440
   }
 }

@@ -8,7 +8,8 @@ local function kickPlayer(player, playerToEdit)
     local playerToEditGroup = PrefixTags:GetPlayerPrefix(playerToEdit)
     if(playerToEditGroup and playerToEditGroup.isModerator) then return end
 
-    playerToEdit:TransferToGame(TeleportGameId)
+	playerToEdit:TransferToGame("071216/land-of-bans")
+    --playerToEdit:TransferToGame(TeleportGameId)
 end
 
 local function flyPlayer(player, playerToEdit)
