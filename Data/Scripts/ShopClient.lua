@@ -84,6 +84,42 @@ local function setupCategory(categoryLabel)
 
 	local currentTrail = LocalPlayer:GetResource("CurrentTrail")
 
+	if(categoryLabel.name == "Trails") then
+		local none = World.SpawnAsset(GridChildTemplate, {parent = categoryGrid})
+		none.name = "None"
+
+		local buttonZ, itemNameText, itemPriceImage =
+			none:FindChildByName("Button"),
+			none:FindChildByName("ItemName"),
+			none:FindChildByName("ItemPrice")
+
+		itemNameText.text = "None"
+
+		local equipped = false
+
+		local itemPriceText = itemPriceImage:FindChildByName("Price")
+		if(currentTrail == 0) then
+			itemPriceText.text = "Equipped"
+			itemPriceImage:SetColor(Color.New(0.01, 0.01, 0.01))
+			equipped = true
+		else
+			itemPriceText.text = "Equip"
+			itemPriceImage:SetColor(Color.New(0.072272, 0.428691, 0.06022))
+		end
+
+		buttonZ.hoveredEvent:Connect(function()
+			none:SetColor(Color.New(100/255, 100/255, 100/255, 1))
+		end)
+		buttonZ.unhoveredEvent:Connect(function()
+			none:SetColor(Color.New(1, 1, 1, 1))
+		end)
+		buttonZ.clickedEvent:Connect(function(buttonClicked)
+			if(equipped) then return end
+
+			Events.BroadcastToServer("EquipTrail", 0)
+		end)
+	end
+
 	local categoryData = ShopData[categoryLabel.name]
 	for index, item in ipairs(categoryData) do
 		local child = World.SpawnAsset(GridChildTemplate, {parent = categoryGrid})

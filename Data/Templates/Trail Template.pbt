@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7059660637648939298
   Name: "Trail Template"
   PlatformAssetType: 5
@@ -38,6 +38,9 @@
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Blueprint {
           BlueprintAsset {
             Id: 13314000148938821048
@@ -47,6 +50,9 @@
           Vfx {
             AutoPlay: true
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
     }
@@ -64,5 +70,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 85
 }

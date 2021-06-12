@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 2922524317104460515
   Name: "FluidUI"
   PlatformAssetType: 3
   TextAsset {
   }
-  SerializationVersion: 65
+  SerializationVersion: 85
 }

@@ -1,9 +1,17 @@
-﻿Entries {
+Entries {
   Key {
     StringVar: "coins"
   }
   SimpleValue {
-    IntVar: 98440
+    IntVar: 98480
+  }
+}
+Entries {
+  Key {
+    StringVar: "wins"
+  }
+  SimpleValue {
+    IntVar: 5
   }
 }
 Entries {
@@ -16,18 +24,10 @@ Entries {
 }
 Entries {
   Key {
-    StringVar: "currentTrail"
+    StringVar: "time_speedrun"
   }
   SimpleValue {
-    IntVar: 10
-  }
-}
-Entries {
-  Key {
-    StringVar: "wins"
-  }
-  SimpleValue {
-    IntVar: 3
+    FloatVar: 16.6367188
   }
 }
 Entries {
@@ -117,5 +117,37 @@ Entries {
         }
       }
     }
+  }
+}
+Entries {
+  Key {
+    StringVar: "currentTrail"
+  }
+  SimpleValue {
+    IntVar: 10
+  }
+}
+Entries {
+  Key {
+    StringVar: "kills"
+  }
+  SimpleValue {
+    IntVar: 0
+  }
+}
+Entries {
+  Key {
+    StringVar: "kdr"
+  }
+  SimpleValue {
+    IntVar: 0
+  }
+}
+Entries {
+  Key {
+    StringVar: "deaths"
+  }
+  SimpleValue {
+    IntVar: 18
   }
 }

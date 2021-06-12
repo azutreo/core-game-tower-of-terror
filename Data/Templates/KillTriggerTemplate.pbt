@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12543943502602641628
   Name: "KillTriggerTemplate"
   PlatformAssetType: 5
@@ -23,6 +23,9 @@
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Trigger {
           TeamSettings {
             IsTeamCollisionEnabled: true
@@ -39,5 +42,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 85
 }

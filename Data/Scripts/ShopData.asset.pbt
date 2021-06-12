@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12595170524562520017
   Name: "ShopData"
   PlatformAssetType: 3
@@ -7,7 +7,7 @@
       Overrides {
         Name: "cs:Game"
         ObjectReference {
-          SelfId: 17521672477466867129
+          SelfId: 9232402496868625781
         }
       }
       Overrides {
@@ -72,5 +72,5 @@
       }
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 85
 }

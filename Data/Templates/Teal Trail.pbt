@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11629638659224415391
   Name: "Teal Trail"
   PlatformAssetType: 5
@@ -47,11 +47,11 @@
           }
           Overrides {
             Name: "bp:Emissive Boost"
-            Float: 10
+            Float: 5
           }
           Overrides {
             Name: "bp:Life"
-            Float: 2
+            Float: 1
           }
         }
         WantsNetworking: true
@@ -60,6 +60,9 @@
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Blueprint {
           BlueprintAsset {
@@ -70,6 +73,9 @@
           Vfx {
             AutoPlay: true
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
     }
@@ -87,5 +93,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 85
 }

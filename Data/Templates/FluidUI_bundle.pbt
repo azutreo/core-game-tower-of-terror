@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2348594221802512696
   Name: "FluidUI"
   PlatformAssetType: 5
@@ -18,6 +18,9 @@
             Y: 1
             Z: 1
           }
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
           BundleDummy {
@@ -40,5 +43,5 @@
     Version: "1.5.0"
     Description: "FluidUI, created by Nicholas Foreman (nforeman)\r\nThumbnail created by John Shoff (FearTheDev)\r\n\r\nFluidUI is a responsive User Interface Framework that allows you to design your interface dynamically without having to worry about the screen resolution of the users playing your games. With many powerful features such as screen-size scaling, grids/lists, and aspect ratios, you will have nearly full control over the presentation of your game.\r\n\r\nGetting the framework to work itself is simple. You only need one instance of this script inside of of a ClientContext. Any additional copies of this script will conflict with each other and you will not get the intended goal.\r\n\r\nWithin the FluidUI.lua script is some very important documentation on how to utilize the system."
   }
-  SerializationVersion: 65
+  SerializationVersion: 85
 }

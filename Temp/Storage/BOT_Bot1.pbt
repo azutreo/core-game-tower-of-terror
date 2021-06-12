@@ -1,9 +1,17 @@
-﻿Entries {
+Entries {
   Key {
-    StringVar: "coins"
+    StringVar: "wins"
   }
   SimpleValue {
-    IntVar: 9700
+    IntVar: 3
+  }
+}
+Entries {
+  Key {
+    StringVar: "currentTrail"
+  }
+  SimpleValue {
+    IntVar: 10
   }
 }
 Entries {
@@ -33,6 +41,22 @@ Entries {
 }
 Entries {
   Key {
+    StringVar: "kills"
+  }
+  SimpleValue {
+    IntVar: 0
+  }
+}
+Entries {
+  Key {
+    StringVar: "deaths"
+  }
+  SimpleValue {
+    IntVar: 1
+  }
+}
+Entries {
+  Key {
     StringVar: "time"
   }
   SimpleValue {
@@ -41,17 +65,17 @@ Entries {
 }
 Entries {
   Key {
-    StringVar: "wins"
+    StringVar: "kdr"
   }
   SimpleValue {
-    IntVar: 3
+    IntVar: 0
   }
 }
 Entries {
   Key {
-    StringVar: "currentTrail"
+    StringVar: "coins"
   }
   SimpleValue {
-    IntVar: 10
+    IntVar: 9700
   }
 }

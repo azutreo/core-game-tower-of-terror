@@ -10,19 +10,15 @@ end
 
 local function equipTrail(player, trailId)
 	local trail = getTrail(trailId)
-	if(not trail) then return end
+	if(trailId ~= 0) then
+		if(not trail) then return end
+	end
 
 	local playerData = Storage.GetPlayerData(player)
 	playerData.currentTrail = trailId
 	Storage.SetPlayerData(player, playerData)
 
-	for _, attachedObject in pairs(player:GetAttachedObjects()) do
-		if(attachedObject.name == "Trail") then
-			attachedObject:Destroy()
-		end
-	end
-
-	player:SetResource("CurrentTrail", trail.id)
+	player:SetResource("CurrentTrail", trail and trail.id or 0)
 end
 
 local function getTrails(player)

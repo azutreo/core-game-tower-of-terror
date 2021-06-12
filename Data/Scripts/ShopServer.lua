@@ -21,6 +21,7 @@ local function purchaseModifier(player, modifierName)
 	if(not modifier) then return end
 
 	local playerData = Storage.GetPlayerData(player)
+	if not playerData.coins then return end
 	if(playerData.coins < modifier.price) then return end
 
 	local success = modifier.func(player)

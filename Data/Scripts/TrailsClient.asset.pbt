@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13378266626184538641
   Name: "TrailsClient"
   PlatformAssetType: 3
@@ -12,5 +12,5 @@
       }
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 85
 }

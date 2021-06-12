@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7497983890382644150
   Name: "RotatingTriggersGroupTemplate"
   PlatformAssetType: 5
@@ -23,6 +23,9 @@
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           IsGroup: true
         }
@@ -33,5 +36,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 85
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7974704566423448515
   Name: "Helpful Functions"
   PlatformAssetType: 5
@@ -18,6 +18,9 @@
             Y: 1
             Z: 1
           }
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
           BundleDummy {
@@ -40,5 +43,5 @@
     Version: "1.2.0"
     Description: "Includes two very useful functions relating to the world:\r\n\r\nfunciton Module:FindPlayerByName(playerName)\r\nfunction Module:WaitForChild(parent, childName, timeout)\r\nfunction Module:GetDescendants(parent)"
   }
-  SerializationVersion: 65
+  SerializationVersion: 85
 }

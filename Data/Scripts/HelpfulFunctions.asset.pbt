@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 751867494844461457
   Name: "HelpfulFunctions"
   PlatformAssetType: 3
@@ -7,6 +7,6 @@
   Marketplace {
     Description: "Includes two very useful functions relating to the world:\r\n\r\nfunction Module:WaitForChild(parent, childName, timeout)\r\nfunction Module:GetDescendants(parent)"
   }
-  SerializationVersion: 65
+  SerializationVersion: 85
   DirectlyPublished: true
 }

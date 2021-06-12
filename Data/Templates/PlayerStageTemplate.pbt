@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16658646999039638252
   Name: "PlayerStageTemplate"
   PlatformAssetType: 5
@@ -21,6 +21,9 @@
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Height: 200
@@ -59,5 +62,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 85
 }

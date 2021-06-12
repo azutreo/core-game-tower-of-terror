@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2781351162215922033
   Name: "RGB Trail"
   PlatformAssetType: 5
@@ -32,11 +32,11 @@
           }
           Overrides {
             Name: "bp:Emissive Boost"
-            Float: 10
+            Float: 5
           }
           Overrides {
             Name: "bp:Life"
-            Float: 2
+            Float: 1
           }
           Overrides {
             Name: "bp:ColorB"
@@ -68,6 +68,9 @@
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Blueprint {
           BlueprintAsset {
             Id: 13314000148938821048
@@ -77,6 +80,9 @@
           Vfx {
             AutoPlay: true
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
     }
@@ -94,5 +100,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 85
 }

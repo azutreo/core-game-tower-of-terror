@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15424652685226872349
   Name: "WelcomeScreen"
   PlatformAssetType: 3
@@ -12,5 +12,5 @@
       }
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 85
 }

@@ -12,17 +12,22 @@ end
 
 local function equipTrail(player, trailId)
 	local trail = getTrail(trailId)
-	if(not trail) then return end
+	if(trailId ~= 0) then
+		if(not trail) then return end
+	end
 
 	if(trails[player]) then
 		trails[player]:Destroy()
 		trails[player] = nil
 	end
 
+	if(trailId == 0) then return end
+
 	local attachedTrail = World.SpawnAsset(trail.template)
 	attachedTrail.name = "Trail"
 	attachedTrail:AttachToPlayer(player, "root")
 	attachedTrail:SetPosition(Vector3.New(0, 0, 150))
+	trails[player] = attachedTrail
 end
 
 local function resourceChanged(player, resourceName, resourceValue)
